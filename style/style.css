@@ -89,21 +89,23 @@ input::placeholder{
 #btn-login{
     width: 100%;
     padding: 10px;
-    /* background-color: #4a3dbf; */
-    background: rgb(74,61,191);
-    background: linear-gradient(45deg, rgba(74,61,191,1) 0%, rgba(150,61,191,1) 100%);
     color: white;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     border-radius: 5px;
     border: none;
     margin-top: 40px;
-    transition-delay: 0.7s;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #963dbf, #4a3dbf, #963dbf);
+    
+    background-size: 300%;
+    transition: all .4s ease-in-out;
 }
 
 #btn-login:hover{
-    cursor: pointer;
-    /* background-color: #963dbf; */
-    background: rgb(150,61,191);
-    background: linear-gradient(45deg, rgba(150,61,191,1) 0%, rgba(74,61,191,1) 100%);
+    background-position: 100% 0;
+}
+
+.thin{
+    font-weight: 600;
 }
