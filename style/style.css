@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /* width: 1920px; */
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: #fafafa;
+}
+
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15vh 15vw;
+}
+
+.bg-login{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px #bdbdbd;
+}
+
+.kiri{
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanan{
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%!important;
+    border-radius: 0 20px 20px 0;
+}
+
+.wrapped{
+    width: 18vw;
+}
+
+.header-login{
+    /* font-weight: 500; */
+    /* margin-bottom: 40px; */
+    color: #303642;
+}
+
+.label-login{
+    margin: 0%;
+    font-weight:bold;
+    font-size: 17px;
+    color: #303642;
+    margin: 35px 0 3px 0;
+}
+
+.input-login{
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #c8cddb;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #c8cddb;
+}
+
+.pss{
+    margin  : 0.82% 0 0 16.5%;
+    position: fixed;
+    cursor: pointer;
+}
+
+#btn-login{
+    width: 100%;
+    padding: 10px;
+    /* background-color: #4a3dbf; */
+    background: rgb(74,61,191);
+    background: linear-gradient(45deg, rgba(74,61,191,1) 0%, rgba(150,61,191,1) 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 40px;
+    transition-delay: 0.7s;
+}
+
+#btn-login:hover{
+    cursor: pointer;
+    /* background-color: #963dbf; */
+    background: rgb(150,61,191);
+    background: linear-gradient(45deg, rgba(150,61,191,1) 0%, rgba(74,61,191,1) 100%);
+}
