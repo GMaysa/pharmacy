@@ -1,3 +1,3 @@
 # Program for Pharmacist
 
-Click the link below for stressed out:
+[Click this link](https://yessyouu.github.io/pharmacy/)
