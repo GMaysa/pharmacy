@@ -9,7 +9,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- css style -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <div class="container-xxl">
@@ -17,7 +17,7 @@
             <div class="col-2 menu-bar">
                 <div class="profile row">
                     <div class="col-5 img-profile">
-                        <img src="asset/doct.jpg" alt="">
+                        <img src="../asset/doct.jpg" alt="">
                     </div>
                     <div class="col-7">
                         <p class="wellcome">Hi Mrs.</p>
@@ -25,12 +25,12 @@
                     </div>
                 </div>
 
-                <div class="menu">
-                    <div class="btn-menu active"><i class="fa-solid fa-chart-simple"></i>&nbspDashboard</div>
-                    <div class="btn-menu"><i class="fa-solid fa-boxes-stacked"></i>&nbspInventory</div>
-                    <div class="btn-menu"><i class="fa-solid fa-money-bill-1-wave"></i>&nbspCashier</div>
-                    <div class="btn-menu"><i class="fa-solid fa-file-lines"></i>&nbspReport</div>
-                </div>
+                <ul class="menu">
+                    <li class="1 btn-menu active"><i class="fa-solid fa-chart-simple"></i>&nbspDashboard</li>
+                    <li class="2 btn-menu"><i class="fa-solid fa-boxes-stacked"></i>&nbspInventory</li>
+                    <li class="3 btn-menu"><i class="fa-solid fa-money-bill-1-wave"></i>&nbspCashier</li>
+                    <li class="4 btn-menu"><i class="fa-solid fa-file-lines"></i>&nbspReport</li>
+                </ul>
 
                 <div class="bot">
                     <button class="btn-logout"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbspLog Out</button>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="col-10 main">
-                <iframe src="index.html" frameborder="0"></iframe>
+                <iframe id="frame" src="home.html" frameborder="0"></iframe>
             </div>
         </div>
     </div>
@@ -49,6 +49,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/togglepw.js"></script>
+    <!-- custom -->
+    <script src="../js/toggleFrame.js"></script>
 </body>
 </html>
