@@ -1,0 +1,22 @@
+.casier{
+    width: 75%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+    height: 100%;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.cari{
+    width: 25%;
+    float: right;
+}
+.bayar{
+    width: 25%;
+    float: right;
+    margin-right: 50px;
+    margin-top: 33%;
+}
