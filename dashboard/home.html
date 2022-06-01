@@ -4,14 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body class="main-dashboard">
-
-    
         
     <h1>Wellcome to Dashboard</h1>
+    <hr>
 
+    <div class="bg-chart">
+        <div class="col">
+            <div class="card-dashboard ds-card">
+                <p>Quantity of sales</p>
+                <h2>33</h2>
+            </div>
+            <div class="card-dashboard ds-card">
+                <p>Card</p>
+                <h2>Rp. 200.000</h2>
+            </div>  
+            <div class="card-dashboard ds-card">
+                <p>Revenue</p>
+                <h2>Rp. 1.378.500</h2>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card-statistic ds-card">
+                <h2>Statistic Income</h2>
+                <div class="wrrap">
+                    <div class="lep" style="width: 64%; height: 100%;">
+                        <canvas id="chart-drugs"></canvas>
+                    </div>
+                    <div class="rek">
+                        <div class="this">
+                            <p>Today</p>
+                            <h3>Rp. 200.000</h3>
+                        </div>
+                        <div class="this">
+                            <p>This Week</p>
+                            <h3>Rp. 200.000</h3>
+                        </div>
+                        <div class="this">
+                            <p>This Month</p>
+                            <h3>Rp. 200.000</h3>
+                        </div>
+                        <div class="this">
+                            <p>This Year</p>
+                            <h3>Rp. 200.000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-dashboard ds-card">
+                <h2>Drugs Category</h2>
+                <div class="categ">
+                    <div class="cate" style="width: 100%; height: 64%;">
+                        <canvas id="chart-input"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card-dashboard ds-card">
+                <h2>Current Stock</h2>
+            </div>
+            <div class="card-dashboard ds-card">
+                <h2>Expired Product</h2>
+            </div>
+            <div class="card-dashboard ds-card">
+                <h2>Our Staff</h2>
+            </div>
+        </div>
+    </div>
+
+<!-- total pembelian hari ini, barang yang masuk hari ini, keuntungan hari ini
+     statistik pembelian barang (hari ini, minggu ini, bulan ini, tahun ini), polar chart obat berdasarkan kategori
+     stok obat saat ini, total obat kadaluarsa, daftar staff  -->
+
+    <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/chartData.js"></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/972b1e0665.js" crossorigin="anonymous"></script>
 </body>
 </html>

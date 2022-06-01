@@ -9,6 +9,8 @@ function linkeds(type){
     }else if(type.contains('3')){
         document.getElementById("frame").src=("cashier.html")
     }else if(type.contains('4')){
+        document.getElementById("frame").src=("staff.html")
+    }else if(type.contains('5')){
         document.getElementById("frame").src=("report.html")
     }
 }
@@ -22,7 +24,7 @@ for(var i = 0, length = n.length; i<length; i++){
             this.classList.add("active");
             var type = this.classList;
             linkeds(type);
-            console.log(n)
+            // console.log(n)
         }
     }
 }
