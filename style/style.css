@@ -118,7 +118,7 @@ input::placeholder{
     border-radius: 5px;
 }
 
-#btn-login, .btn-find, .btn-crete, .btn-save{
+#btn-login, .btn-find, .btn-crete, .btn-save, .btn-ck{
     padding: 10px;
     color: white;
     font-weight: bold!important;
@@ -130,7 +130,7 @@ input::placeholder{
     transition: all .7s ease-in-out!important;
 }
 
-#btn-login:hover, .btn-find:hover, .btn-crete:hover, .btn-save:hover{
+#btn-login:hover, .btn-find:hover, .btn-crete:hover, .btn-ck:hover, .btn-save:hover{
     background-position: 100% 0;
 }
 
