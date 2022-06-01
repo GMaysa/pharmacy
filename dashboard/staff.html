@@ -6,10 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body class="main-dashboard">
         
     <h1>Staff</h1>
+    <hr>
 
+    <div class="bg-ds">
+        
+        <div class="find">
+          <input type="text" name="" id="" placeholder="Search here...">
+          <button class="btn-find"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="overflow-x:auto;">
+          
+          <table class="table table-bordered">
+            <tr>
+                <th>ID Obat</th>
+                <th>Nama Obat</th>
+                <th>Kategori</th>
+                <th>Harga Satuan</th>
+                <th>Stok</th>
+                <th>Tanggal Exp</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>adasdasd</td>
+                <td>adsdadadasdasdasdasasdasdasdasdasdadaddsdaasdadadasdasdasdasdasdasdasdasdasdsdasdas</td>
+                <td>adasdsadadadasdsadsadasdasaadsdsasasdad</td>
+                <td>asdaadasdasdasdasdadadadadadsdsad</td>
+                <td>adassdadadasdasdsadasdsadasdasddsa</td>
+                <td>asdsadssadasdasdasdasdadadadaa</td>
+                <td>
+                  <div class="action" style="color: #a8a8a8;">
+                    <div class="hi">
+                      <a data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: #FFA45E; box-shadow: 0px 0px 4px #ffd0ac;"><i class="fa-solid fa-pen"></i></a> 
+                      &nbsp|&nbsp 
+                      <a data-bs-toggle="modal" data-bs-target="#deleteModal" style=" color: #EC414B; box-shadow: 0px 0px 4px #ecb5b9;"><i class="fa-solid fa-trash-can"></i></a> 
+                    </div>
+                  </div>
+                </td>
+            </tr>
+            <tr>
+                <td>adasdasd</td>
+                <td>adasdasd</td>
+                <td>adsdadad</td>
+                <td>adasdasdad</td>
+                <td>asdasdsad</td>
+                <td>adasdsa</td>
+                <td>asdsadsa</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="btn-crete" data-bs-toggle="modal"data-bs-target="#exampleModal">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <div class="modal-body ">
+                <form action="" method="get" id="add-data">
+                  <div class="wrp row">
+                    <label for="nama-obat" class="col-12">Nama Obat</label>
+                    <input type="text" name="nama-obat" class="col-12" id="" required>
+                    <label for="harga-obat" class="col-6">Harga Ecer</label>
+                    <label for="jumlah-obat" class="col-6">Jumlah</label>
+                  <!-- </div>
+                  <div class="wrp"> -->
+                    <input type="text" class="col-sm-6" name="harga-obat" id="" required>
+                    <input type="text" class="col-sm-6" name="jumlah-obat" id="" required>
+                  <!-- </div>
+                  <div class="wrp"> -->
+                    <label class="col-6" for="category">Kategori</label>
+                    <label class="col-6" for="exp-date">Exp date</label>
+                  <!-- </div>
+                  <div class="wrp"> -->
+                    <select class="col-6" type="date" name="category" id="" required>
+                      <option value="">Pilih kategori</option>
+                      <option value="minum">Minum</option>
+                    </select>
+                    <input class="col-6" type="date" name="exp-date" id="" required>
+                  </div>
+                </form>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-cls" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="add-data" value="Submit" class="btn btn-save btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <div class="modal-body ">
+                
+                Are you sure to Delete
+
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-cls" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="add-data" value="Submit" class="btn btn-save btn-primary">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/972b1e0665.js" crossorigin="anonymous"></script>
+    <script src="../js/invent.js"></script>
 </body>
 </html>

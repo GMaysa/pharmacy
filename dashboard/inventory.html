@@ -14,7 +14,7 @@
     <h1>Inventory</h1>
     <hr>
 
-    <div class="bg-invent">
+    <div class="bg-ds">
         
         <div class="find">
           <input type="text" name="" id="" placeholder="Search here...">
@@ -41,10 +41,12 @@
                 <td>adassdadadasdasdsadasdsadasdasddsa</td>
                 <td>asdsadssadasdasdasdasdadadadaa</td>
                 <td>
-                  <div class="action">
-                    <a href="http://">edit</a> 
-                    &nbsp|&nbsp 
-                    <a href="http://">delete</a> 
+                  <div class="action" style="color: #a8a8a8;">
+                    <div class="hi">
+                      <a data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: #FFA45E; box-shadow: 0px 0px 4px #ffd0ac;"><i class="fa-solid fa-pen"></i></a> 
+                      &nbsp|&nbsp 
+                      <a data-bs-toggle="modal" data-bs-target="#deleteModal" style=" color: #EC414B; box-shadow: 0px 0px 4px #ecb5b9;"><i class="fa-solid fa-trash-can"></i></a> 
+                    </div>
                   </div>
                 </td>
             </tr>
@@ -102,6 +104,29 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-cls" data-bs-dismiss="modal">Close</button>
                 <button type="submit" form="add-data" value="Submit" class="btn btn-save btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              <div class="modal-body ">
+                
+                Are you sure to Delete
+
+              </div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-cls" data-bs-dismiss="modal">Close</button>
+                <button type="submit" form="add-data" value="Submit" class="btn btn-save btn-primary">Delete</button>
               </div>
             </div>
           </div>

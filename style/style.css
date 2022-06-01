@@ -406,7 +406,7 @@ iframe{
     justify-content: center; */
 }
 
-.bg-invent{
+.bg-ds{
     margin: 75px;
     margin-bottom: 0;
     width: 90%;
@@ -420,6 +420,10 @@ iframe{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.plek .wrp .find{
+    justify-content: center;
 }
 
 .find input{
@@ -456,6 +460,7 @@ iframe{
 .table tr th, .table tr td{
     background-color: #f7f7f7;
     height: 100%!important;
+
 }
 
 .btn-crete{
@@ -493,13 +498,32 @@ form#add-data label{
     margin-bottom: 20px;
 }
 
-.action{
+.action a{
+    padding: 5px 20px;
+    border-radius: 3px;
+    color: #fff;
+    transition: .7s;
 }
 
-.table tr td:nth-child(7){
+.action a:nth-child(1):hover{
+    background-color: #FFA45E;
+    color: #fff!important;
+}
+
+.action a:nth-child(2):hover{
+    background-color: #EC414B;
+    color: #fff!important;
+}
+
+td:nth-child(7) .action{
     height: 100%!important;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.plek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
